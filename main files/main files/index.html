@@ -71,8 +71,29 @@
       font-weight: 400;
     }
 
-  /* Bottom container (already centered) */
-.bottom-launch {
+.top-launch {
+  position: fixed;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.top-badge {
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #faa719, #ffbe4d);
+  color: #2c2e7b;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(250, 167, 25, 0.6);
+  animation: pulseGlow 3s infinite ease-in-out, floatBadge 4s ease-in-out infinite;
+}
+
+.bottom-stay {
   position: fixed;
   bottom: 35px;
   left: 50%;
@@ -80,30 +101,18 @@
   z-index: 20;
 }
 
-/* Launch badge */
-.launch-badge {
+.stay-badge {
   display: inline-block;
-  padding: 16px 40px;
-  font-size: 1.2rem;
+  padding: 14px 35px;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  background: linear-gradient(90deg, #faa719, #ffbe4d);
+  background: linear-gradient(90deg, #ffbe4d, #faa719);
   color: #2c2e7b;
   border-radius: 50px;
-
   box-shadow: 0 0 15px rgba(250, 167, 25, 0.6);
-  
-  /* IMPORTANT: We animate ONLY translateY so center stays fixed */
   animation: pulseGlow 3s infinite ease-in-out, floatBadge 4s ease-in-out infinite;
-}
-
-/* Glow pulse */
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 10px rgba(250, 167, 25, 0.4); }
-  50% { box-shadow: 0 0 25px rgba(250, 167, 25, 0.9); }
-  100% { box-shadow: 0 0 10px rgba(250, 167, 25, 0.4); }
 }
 
 /* Floating animation — ONLY vertical movement */
@@ -153,7 +162,10 @@
   </style>
 </head>
 <body>
-
+<!-- TOP BADGE -->
+<div class="top-launch">
+  <div class="top-badge">Launching Soon</div>
+</div>
   <!-- Background GIF -->
   <img src="assets/images/logo/Smile Icon Transparent.gif" class="bg-gif" alt="Background GIF">
 
@@ -169,7 +181,7 @@
     <div class="particle" style="left:65%; animation-delay:1.5s; animation-duration:11s;"></div>
     <div class="particle" style="left:75%; animation-delay:2.5s; animation-duration:12s;"></div>
     <div class="particle" style="left:85%; animation-delay:4.5s; animation-duration:14s;"></div>
-    <div().particle" style="left:95%; animation-delay:0.5s; animation-duration:9s;"></div>
+    <div class="particle" style="left:95%; animation-delay:0.5s; animation-duration:9s;"></div>
     <!-- (add more if you like) -->
   </div>
 
@@ -177,8 +189,9 @@
     <h1>SMILEBOX <span>Digital</span></h1>
     
   </div>-->
-<div class="bottom-launch">
-  <div class="launch-badge">Launching Soon</div>
+<!-- BOTTOM BADGE -->
+<div class="bottom-stay">
+  <div class="stay-badge">Stay Tuned!</div>
 </div>
 
 </body>
