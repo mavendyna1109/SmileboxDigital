@@ -4110,7 +4110,7 @@ input:focus {
 ----------------------------------------------*/
 .intro1-wrapper-content {
   position: relative;
-  padding: 200px 0px 127px;
+  padding: 120px 0px 127px;
   z-index: 9;
 }
 @media (max-width: 1199px) {
