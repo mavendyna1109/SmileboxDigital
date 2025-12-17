@@ -46,6 +46,23 @@ Description: Ezensi - Creative Digital Agency Html Template  <
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
+@font-face {
+    font-family: 'Genova';
+    src: url('../Fonts/genova-font-family-1763421347-0/Genova-BF661f3c7dea178.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klinko';
+    src: url('../Fonts/klinko-playful-modular-display-font-2025-04-30-21-39-16-utc/Klinko - Playful Bold Font.woff2') format('woff2'),
+         url('../Fonts/klinko-playful-modular-display-font-2025-04-30-21-39-16-utc/Klinko - Playful Bold Font.ttf') format('truetype'),
+         url('../Fonts/klinko-playful-modular-display-font-2025-04-30-21-39-16-utc/Klinko - Playful Bold Font.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap; /* Helps with loading performance */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --body: #ffffff;
@@ -70,7 +87,7 @@ Description: Ezensi - Creative Digital Agency Html Template  <
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Genova',sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -108,7 +125,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--title);
@@ -600,11 +617,15 @@ input:focus {
   display: flex;
   height: 100%;
   justify-content: center;
+  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 9999999;
+  background-image: url(../images/logo/Smile_Icon_Transparent.gif);
+  background-position: center;
+  background-color: white;
 }
 .preloader .animation-preloader {
   z-index: 1000;
@@ -4123,13 +4144,13 @@ input:focus {
   color: var(--white);
   -webkit-text-stroke-width: 1.2320058346;
   -webkit-text-stroke-color: var(--white);
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", cursive;
   font-size: 140px;
   font-style: normal;
   font-weight: 600;
   line-height: 129.8px;
   letter-spacing: -7.2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
 }
 @media (max-width: 1399px) {
@@ -4170,13 +4191,13 @@ input:focus {
   -webkit-text-stroke-color: var(--theme);
   -webkit-text-stroke: 1px var(--white);
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", cursive;
   font-size: 140px;
   font-style: normal;
   font-weight: 600;
   line-height: 119.8px;
   letter-spacing: -7.2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-right: 7px;
 }
 @media (max-width: 1399px) {
@@ -4428,15 +4449,16 @@ input:focus {
 .intro3-content__title {
   max-width: 1213px;
   color: var(--white);
-  font-family: "Outfit", sans-serif;
-  font-size: 110px;
+  font-family: "Klinko", cursive;
+  font-size: 140px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 99.8px;
+  font-weight: 200;
+  line-height: 109.8px;
   letter-spacing: -3.2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 0 auto;
   padding-bottom: 36px;
+  text-align: left;
 }
 @media (max-width: 1199px) {
   .intro3-content__title {
@@ -4469,7 +4491,8 @@ input:focus {
   }
 }
 .intro3-content__title span {
-  font-weight: 300;
+  font-weight: 200;
+  color: #faa719;
 }
 .intro3-content__btn {
   display: flex;
