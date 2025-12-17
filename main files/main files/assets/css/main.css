@@ -477,7 +477,7 @@ span a {
 .section-title2__subtitle {
   color: var(--theme);
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Klinko", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -493,7 +493,7 @@ span a {
 .section-title2__title {
   color: var(--title);
   text-align: center;
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", sans-serif;;
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
