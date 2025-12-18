@@ -67,7 +67,7 @@ Description: Ezensi - Creative Digital Agency Html Template  <
   --body: #ffffff;
   --black: #000;
   --white: #fff;
-  --theme: #E44F39;
+  --theme: #faa719;
   --theme2: #232323;
   --title: #232323;
   --gray1: #D1D1D1;
@@ -497,7 +497,7 @@ span a {
   font-style: normal;
   font-weight: 600;
   line-height: 91.12px;
-  letter-spacing: -3.2px;
+  letter-spacing: -2.2px;
 }
 .section-title2__title span {
   color: #faa719;
@@ -525,6 +525,44 @@ span a {
     letter-spacing: 0.1px;
   }
 }
+
+.section-title5__title {
+  color: var(--title);
+  text-align: center;
+  font-family: "Klinko", sans-serif;;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 91.12px;
+  letter-spacing: -1.2px;
+}
+.section-title5__title span {
+  color: #faa719;
+}
+@media (max-width: 1399px) {
+  .section-title5__title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title5__title {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.1px;
+  }
+  .section-title5__title br {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .section-title5__title {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.1px;
+  }
+}
+
 .section-title2.style2 .section-title2__subtitle {
   color: var(--theme2);
 }
@@ -8629,12 +8667,12 @@ input:focus {
 }
 .project-details-wrapper-header__title {
   color: var(--title);
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
   line-height: 91.12px;
-  letter-spacing: -3.2px;
+  letter-spacing: -1.2px;
   width: 672px;
 }
 @media (max-width: 991px) {
@@ -8744,12 +8782,12 @@ input:focus {
 }
 .project-details-wrapper-footer__title {
   color: var(--title);
-  font-family: "Outfit", sans-serif;
-  font-size: 80px;
+  font-family: "Klinko", sans-serif;
+  font-size: 65px;
   font-style: normal;
   font-weight: 600;
   line-height: 91.12px;
-  letter-spacing: -3.2px;
+  letter-spacing: -1.2px;
   margin-bottom: 18px;
 }
 @media (max-width: 1399px) {
@@ -8821,8 +8859,8 @@ input:focus {
 }
 .project-details-wrapper-footer-desc__title {
   color: var(--title);
-  font-family: "Outfit", sans-serif;
-  font-size: 32px;
+  font-family: "Klinko", sans-serif;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
