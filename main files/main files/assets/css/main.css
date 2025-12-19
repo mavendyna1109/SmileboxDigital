@@ -564,7 +564,7 @@ span a {
 }
 
 .section-title2.style2 .section-title2__subtitle {
-  color: var(--theme2);
+  color: #2c2e7b;
 }
 .section-title2.style2 .section-title2__subtitle .svg {
   filter: brightness(0%) invert(0%);
@@ -7334,7 +7334,7 @@ input:focus {
 }
 .contact1-wrapper-content__title {
   color: var(--title);
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
@@ -9963,12 +9963,12 @@ input:focus {
 }
 .footer1-top__title {
   color: var(--white);
-  font-family: "Outfit", sans-serif;
+  font-family: "Klinko", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
   line-height: 91.12px;
-  letter-spacing: -3.2px;
+  letter-spacing: -1.2px;
 }
 @media (max-width: 1399px) {
   .footer1-top__title {
