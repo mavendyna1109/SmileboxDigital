@@ -8453,8 +8453,15 @@ input:focus {
 }
 @media (max-width: 767px) {
   .marquee2-scrolling.style2 {
-    transform: rotate(0);
-    margin-top: 20px;
+    /* transform: rotate(0);
+    margin-top: 20px; */
+
+    transform: rotate(-6deg);
+        margin-top: 20px;
+        width: 105%;
+        overflow: hidden;
+        position: relative;
+        right: 8px;
   }
 }
 .marquee2-scrolling.style2 .marquee2-scrolling__item {
