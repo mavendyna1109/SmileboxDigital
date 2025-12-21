@@ -4998,11 +4998,11 @@ input:focus {
 .feature1-items__list-item {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -10%;
   transform: translate(-50%, -50%);
   display: inline-block;
   padding: 60px 62px;
-  max-width: 500px;
+  max-width: 444px;
   color: var(--text);
   font-family: "Outfit", sans-serif;
   font-size: 45px;
